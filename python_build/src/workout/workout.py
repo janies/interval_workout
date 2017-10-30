@@ -36,6 +36,13 @@ def run_timer(duration):
     print "Done"
     NSBeep()
 
+def keep_going(config, time, duration, cur):
+    if time < duration:
+        return True
+    if cur <= len(config["workouts"]):
+        return True
+    return False
+
 @click.command()
 @click.option("--config", type=click.File("rb"), callback=load_config)
 @click.option("--duration", default=int(15), help="Number of minutes to work out",
@@ -47,13 +54,16 @@ def main(config, duration, random):
     print "Starting workout for %d Minutes" % (duration/60)
     cur = 0
     first = True
-    while time < duration:
+    while keep_going(config, time, duration, cur):
+        workout = get_workout(config, random, cur)
         if not first:
-            print "\nRest"
+            time_left = duration - time
+            print "\nRest (%s is next)" % workout["name"]
+            print "Only %dm:%ds more to go" % (time_left/60, time_left%60)
             run_timer(config["rest_duration"])
         else:
             first = False
-        workout = get_workout(config, random, cur)
+
         sys.stdout.write('\a')
         print "\nDo %s" % workout["name"]
         cur += 1

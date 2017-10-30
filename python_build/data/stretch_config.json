@@ -1,0 +1,81 @@
+{
+  "workout_duration":30,
+  "rest_duration":5,
+  "workouts":[
+    {
+      "name":"back stretch",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"splits",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"American Splits (Left)",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"American Splits (Right)",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Arm Stretch across body (Left)",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Arm Stretch behind the back (Left)",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Arm Stretch across body (Right)",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Arm Stretch behind the back (Right)",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Out Stretched Arms",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Wall Stretch",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Snake",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Pull in left Knee",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Pull foot back left leg",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Pull in Right Knee",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Pull foot back Right leg",
+      "image":"",
+      "duration":20
+    }
+  ]
+}

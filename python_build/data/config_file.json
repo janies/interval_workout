@@ -8,22 +8,17 @@
       "duration":30
     },
     {
-      "name":"Planks - Center",
+      "name":"Planks",
       "image":"",
-      "duration":30
-    },
-    {
-      "name":"Planks - Left",
-      "image":"",
-      "duration":30
-    },
-    {
-      "name":"Planks - Right",
-      "image":"",
-      "duration":30
+      "duration":60
     },
     {
       "name":"Situps",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name": "Cross Sittups",
       "image":"",
       "duration":30
     },
@@ -38,24 +33,19 @@
       "duration":30
     },
     {
-      "name":"Crosses",
-      "image":"",
-      "duration":30
-    },
-    {
       "name":"Front Kick",
       "image":"",
-      "duration":30
+      "duration":60
     },
     {
       "name":"Side Kick",
       "image":"",
-      "duration":30
+      "duration":60
     },
     {
       "name":"Round Kick",
       "image":"",
-      "duration":30
+      "duration":60
     },
     {
       "name":"High Knees",
@@ -68,9 +58,14 @@
       "duration":30
     },
     {
+      "name":"Jumping Jacks",
+      "image":"",
+      "duration":60
+    },
+    {
       "name":"Stalking",
       "image":"",
-      "duration":30
+      "duration":60
     },
     {
       "name":"Upper Cuts",
@@ -80,7 +75,7 @@
     {
       "name":"Lunges",
       "image":"",
-      "duration":30
+      "duration":60
     },
     {
       "name":"Squat Thrusts",
