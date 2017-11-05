@@ -1,0 +1,40 @@
+{
+  "workout_duration":30,
+  "stretch_rest_duration":1,
+  "workout_rest_duration":3,
+  "prep_time":5,
+  "workouts":[
+    {
+      "name":"Pushups",
+      "image":"",
+      "duration":2
+    },
+    {
+      "name":"Planks",
+      "image":"",
+      "duration":2
+    },
+    {
+      "name":"Situps",
+      "image":"",
+      "duration":2
+    },
+    {
+      "name": "Cross Sittups",
+      "image":"",
+      "duration":2
+    }
+  ],
+  "stretches":[
+    {
+      "name":"back stretch",
+      "image":"",
+      "duration":1
+    },
+    {
+      "name":"splits",
+      "image":"",
+      "duration":1
+    }
+  ]
+}

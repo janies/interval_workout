@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
   <head>
-    <meta charset="utf-8">
-    <title></title>
+       <script src="http://code.angularjs.org/angular-1.0.0rc11.min.js"></script>
   </head>
   <body>
 
     <script src="src/app.js" charset="utf-8"></script>
+    <div ng-controller="WorkoutController">
+      <center>
+        <h2>{{minutes}}:{{seconds}}</h2>
+        <h1>{{name}}</h1>
+        <img src="{{image}}" alt="{{name}}" style="width:400px;height:500px;">
+        <p><h1>{{counter}}</h1></p>
+        <button ng-click="pause()"> {{button_state}}</button>
+      </center>
+    </div>
   </body>
 </html>

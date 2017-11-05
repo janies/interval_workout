@@ -1,0 +1,97 @@
+{
+  "workout_duration":15,
+  "workout_rest_duration":30,
+  "stretch_rest_dureation":5,
+  "workouts":[
+    {
+      "name":"Pushups",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Planks",
+      "image":"",
+      "duration":60
+    },
+    {
+      "name":"Situps",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name": "Cross Sittups",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Squats",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Jabs",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Front Kick",
+      "image":"",
+      "duration":60
+    },
+    {
+      "name":"Side Kick",
+      "image":"",
+      "duration":60
+    },
+    {
+      "name":"Round Kick",
+      "image":"",
+      "duration":60
+    },
+    {
+      "name":"High Knees",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Jumps",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Jumping Jacks",
+      "image":"",
+      "duration":60
+    },
+    {
+      "name":"Stalking",
+      "image":"",
+      "duration":60
+    },
+    {
+      "name":"Upper Cuts",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Lunges",
+      "image":"",
+      "duration":60
+    },
+    {
+      "name":"Squat Thrusts",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Wall Sits",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Ankle Rises",
+      "image":"",
+      "duration":30
+    }
+  ]
+}

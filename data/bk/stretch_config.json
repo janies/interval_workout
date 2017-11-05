@@ -1,0 +1,173 @@
+{
+  "workout_duration":15,
+  "rest_duration":5,
+  "stretches":[
+    {
+      "name":"Pushups",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Planks",
+      "image":"",
+      "duration":60
+    },
+    {
+      "name":"Situps",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name": "Cross Sittups",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Squats",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Jabs",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Front Kick",
+      "image":"",
+      "duration":60
+    },
+    {
+      "name":"Side Kick",
+      "image":"",
+      "duration":60
+    },
+    {
+      "name":"Round Kick",
+      "image":"",
+      "duration":60
+    },
+    {
+      "name":"High Knees",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Jumps",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Jumping Jacks",
+      "image":"",
+      "duration":60
+    },
+    {
+      "name":"Stalking",
+      "image":"",
+      "duration":60
+    },
+    {
+      "name":"Upper Cuts",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Lunges",
+      "image":"",
+      "duration":60
+    },
+    {
+      "name":"Squat Thrusts",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Wall Sits",
+      "image":"",
+      "duration":30
+    },
+    {
+      "name":"Ankle Rises",
+      "image":"",
+      "duration":30
+    }
+  ],
+  "workouts":[
+    {
+      "name":"back stretch",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"splits",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"American Splits (Left)",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"American Splits (Right)",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Arm Stretch across body (Left)",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Arm Stretch behind the back (Left)",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Arm Stretch across body (Right)",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Arm Stretch behind the back (Right)",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Out Stretched Arms",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Wall Stretch",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Snake",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Pull in left Knee",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Pull foot back left leg",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Pull in Right Knee",
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Pull foot back Right leg",
+      "image":"",
+      "duration":20
+    }
+  ]
+}
