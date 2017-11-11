@@ -6,184 +6,184 @@
   "workouts":[
     {
       "name":"Pushups",
-      "image":"",
+      "image":"data/images/pushups.jpg",
       "duration":30
     },
     {
       "name":"Planks",
-      "image":"",
+      "image":"data/images/planks.jpg",
       "duration":60
     },
     {
       "name":"Situps",
-      "image":"",
+      "image":"data/images/situps.jpg",
       "duration":30
     },
     {
       "name": "Cross Sittups",
-      "image":"",
+      "image":"data/images/cross-situp.jpg",
       "duration":30
     },
     {
       "name":"Squats",
-      "image":"",
+      "image":"data/images/squats.jpg",
       "duration":30
     },
     {
       "name":"Jabs",
-      "image":"",
+      "image":"data/images/jabs.jpg",
       "duration":30
     },
     {
       "name":"Front Kick",
-      "image":"",
+      "image":"data/images/front-kick.jpeg",
       "duration":60
     },
     {
       "name":"Side Kick",
-      "image":"",
+      "image":"data/images/side-kick.gif",
       "duration":60
     },
     {
       "name":"Round Kick",
-      "image":"",
+      "image":"data/images/round_kick.jpg",
       "duration":60
     },
     {
       "name":"High Knees",
-      "image":"",
+      "image":"data/images/high-knees.jpg",
       "duration":30
     },
     {
       "name":"Jumps",
-      "image":"",
+      "image":"data/images/jumps.jpg",
       "duration":30
     },
     {
       "name":"Jumping Jacks",
-      "image":"",
+      "image":"data/images/jumping-jacks.jpg",
       "duration":60
     },
     {
       "name":"Stalking",
-      "image":"",
+      "image":"data/images/shadow_box.jpg",
       "duration":60
     },
     {
       "name":"Upper Cuts",
-      "image":"",
+      "image":"data/images/uppercut.jpg",
       "duration":30
     },
     {
       "name":"Lunges",
-      "image":"",
+      "image":"data/images/lunges.jpg",
       "duration":60
     },
     {
       "name":"Squat Thrusts",
-      "image":"",
+      "image":"data/images/squat-thrusts.jpg",
       "duration":30
     },
     {
       "name":"Wall Sits",
-      "image":"",
+      "image":"data/images/wall_sit.jpg",
       "duration":30
     },
     {
       "name":"Ankle Rises",
-      "image":"",
+      "image":"data/images/ankle_lift.jpg",
       "duration":30
     },
     {
       "name":"Jab/Reverse combos",
-      "image":"",
+      "image":"data/images/jabs.jpg",
       "duration":30
     }
   ],
   "stretches":[
     {
       "name":"back stretch",
-      "image":"",
+      "image":"data/images/back.jpg",
       "duration":20
     },
     {
       "name":"splits",
-      "image":"",
+      "image":"data/images/splits.jpg",
       "duration":20
     },
     {
       "name":"American Splits (Left)",
-      "image":"",
+      "image":"data/images/american_splits.jpg",
       "duration":20
     },
     {
       "name":"American Splits (Right)",
-      "image":"",
+      "image":"data/images/american_splits.jpg",
       "duration":20
     },
     {
       "name":"Arm Stretch across body (Left)",
-      "image":"",
+      "image":"data/images/arm.jpeg",
       "duration":20
     },
     {
       "name":"Arm Stretch behind the back (Left)",
-      "image":"",
+      "image":"data/images/arm_back.jpg",
       "duration":20
     },
     {
       "name":"Arm Stretch across body (Right)",
-      "image":"data/images/rest.jpg",
+      "image":"data/images/arm.jpeg",
       "duration":20
     },
     {
       "name":"Arm Stretch behind the back (Right)",
-      "image":"",
+      "image":"data/images/arm_back.jpg",
       "duration":20
     },
     {
       "name":"Out Stretched Arms",
-      "image":"",
+      "image":"data/images/arm_out.jpg",
       "duration":20
     },
     {
       "name":"Wall Stretch (Left)",
-      "image":"",
+      "image":"data/images/wall.jpg",
       "duration":20
     },
     {
       "name":"Wall Stretch (Right)",
-      "image":"",
+      "image":"data/images/wall.jpg",
       "duration":20
     },
     {
       "name":"Snake",
-      "image":"",
+      "image":"data/images/snake.gif",
       "duration":20
     },
     {
       "name":"Cat Back",
-      "image":"",
+      "image":"data/images/cat_back.png",
       "duration":20
     },
     {
       "name":"Pull in left Knee",
-      "image":"",
+      "image":"data/images/pull_knee.jpg",
       "duration":20
     },
     {
       "name":"Pull foot back left leg",
-      "image":"",
+      "image":"data/images/foot_back.jpg",
       "duration":20
     },
     {
       "name":"Pull in Right Knee",
-      "image":"",
+      "image":"data/images/pull_knee.jpg",
       "duration":20
     },
     {
       "name":"Pull foot back Right leg",
-      "image":"",
+      "image":"data/images/foot_back.jpg",
       "duration":20
     }
   ]

@@ -5,68 +5,58 @@ angular.module('workout').controller('WorkoutController', WorkoutController)
 WorkoutController.$inject = ['$scope', '$timeout', '$http'];
 
 function WorkoutController($scope, $timeout, $http){
-    $scope.prep_for_workout = function(){
-      $scope.counter = $scope.data["prep_time"]
-      $scope.name = "Prepare for workout";
-      $scope.workout_start = true;
-      $scope.workout_index = 0;
+
+    $scope.set_rest = function(timeout){
+      console.log("Rest:", timeout);
       $scope.rest = false;
+      $scope.counter = timeout;
+      $scope.image = "data/images/rest.jpg";
+      $scope.name = "Rest";
     }
 
-    $scope.set_workout = function (){
-      var type = $scope.get_type();
-      var index = $scope.workout_index;
-      if (type == "workouts" && $scope.workout_start != true){
-        $scope.prep_for_workout();
+    $scope.set_activity = function(status, index){
+      console.log("Activity status:", status, "\nindex:", index);
+      $scope.rest = true;
+      $scope.counter = $scope.data[status][index].duration;
+      $scope.name = $scope.data[status][index].name;
+      $scope.image = $scope.data[status][index].image;
+    }
+    $scope.set_up_next_workout = function(){
+      $scope.state = "workouts";
+      if ($scope.rest){
+        $scope.set_rest($scope.data.workout_rest_duration);
       }
       else{
-        $scope.rest = true;
-        console.log("Index of item", index);
-        $scope.counter = $scope.data[type][index].duration;
-        $scope.name = $scope.data[type][index].name;
-        $scope.image = $scope.data[type][index].image;
-        if (type == "workouts"){
-           $scope.workout_index = Math.floor(Math.random() * $scope.data["workouts"].length);
+        $scope.set_activity($scope.state, Math.floor(Math.random() * $scope.data["workouts"].length));
+      }
+    }
+
+    $scope.set_prep_for_workout = function(){
+      console.log("setting For prep_for_workout");
+      $scope.rest = false;
+      $scope.counter = 10;
+      $scope.name = "Prepare for Workout";
+      $scope.state = "prep_for_workout";
+
+    }
+    $scope.set_up_next_stretch = function(){
+      if ($scope.rest){
+        $scope.set_rest($scope.data.stretch_rest_duration);
+      }
+      else{
+        $scope.index += 1;
+        if ($scope.index >= $scope.data["stretches"].length){
+          $scope.set_prep_for_workout();
         }
         else{
-          $scope.workout_index += 1;
+          $scope.set_activity($scope.state, $scope.index);
         }
       }
     }
 
-    $scope.set_rest = function(){
-      $scope.rest = false;
-      if ($scope.get_type() == "stretches"){
-        $scope.counter = $scope.data["stretch_rest_duration"];
-      }
-      else{
-        $scope.counter = $scope.data["workout_rest_duration"];
-      }
-      $scope.name = "Rest";
-      $scope.image = "data/images/rest.jpg";
-    }
-
-    $scope.get_type = function (){
-      if ($scope.stretch &&
-          $scope.workout_index < $scope.data["stretches"].length){
-        return "stretches";
-      }
-      $scope.stretch = false;
-      return "workouts";
-    }
-
-    $scope.should_continue = function(){
-      if ($scope.get_type() == "workouts"){
-        if($scope.count_down_timer > 0){
-          return true;
-        }
-        return false;
-      }
-      return true;
-    }
     $scope.onTimeout = function(){
       $scope.counter--;
-      if ($scope.stretch == false){
+      if ($scope.state == "workouts"){
         $scope.count_down_timer--;
         $scope.minutes = Math.trunc($scope.count_down_timer/60);
         $scope.seconds = $scope.count_down_timer%60;
@@ -74,32 +64,32 @@ function WorkoutController($scope, $timeout, $http){
       mytimeout = $timeout($scope.onTimeout, 1000);
       if ($scope.counter <= 0){
         $timeout.cancel(mytimeout);
-        if ($scope.rest){
-          $scope.set_rest();
+        if ($scope.count_down_timer <= 0){
+          $scope.state = "Done"
+          $scope.name = "All done";
         }
-        else{
-          $scope.set_workout();
+        else if ($scope.state == "stretches"){
+          $scope.set_up_next_stretch()
         }
-        if ($scope.should_continue()){
+        else if ($scope.state == "prep_for_workout" || $scope.state == "workouts"){
+          $scope.set_up_next_workout()
+        }
+        // else if ($scope.state == "workouts"){
+        //  $scope.set_up_next_workout()
+        // }
+        if ($scope.state != "Done"){
           mytimeout = $timeout($scope.onTimeout, 1000);
         }
-        else{
-          $scope.seconds = 0;
-          $scope.name = "You did it!!"
-        }
-
       }
     }
 
     $scope.run_loop = function(){
       //console.log($scope.data);
       $scope.button_state = "Pause";
-      $scope.rest = true;
-      $scope.stretch = true;
-      $scope.state_count = 0;
-      $scope.workout_index = 0;
+      $scope.rest = false;
+      $scope.state = "stretches";
+      $scope.index = -1;
       $scope.counter = 1;
-      $scope.workout_start = false;
       $scope.count_down_timer = $scope.data["workout_duration"]
       $scope.name = "Get Ready"
       $scope.minutes = "--";
