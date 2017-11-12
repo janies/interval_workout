@@ -23,6 +23,7 @@ function WorkoutController($scope, $timeout, $http){
     }
     $scope.set_up_next_workout = function(){
       $scope.state = "workouts";
+      $scope.display_countdown();
       if ($scope.rest){
         $scope.set_rest($scope.data.workout_rest_duration);
       }
@@ -54,12 +55,16 @@ function WorkoutController($scope, $timeout, $http){
       }
     }
 
+    $scope.display_countdown = function(){
+      $scope.minutes = Math.trunc($scope.count_down_timer/60);
+      $scope.seconds = $scope.count_down_timer%60;
+    }
+
     $scope.onTimeout = function(){
       $scope.counter--;
       if ($scope.state == "workouts"){
         $scope.count_down_timer--;
-        $scope.minutes = Math.trunc($scope.count_down_timer/60);
-        $scope.seconds = $scope.count_down_timer%60;
+        $scope.display_countdown();
       }
       mytimeout = $timeout($scope.onTimeout, 1000);
       if ($scope.counter <= 0){
@@ -119,7 +124,7 @@ function WorkoutController($scope, $timeout, $http){
       }
     }
 
-    $scope.run_json_input("data/config.json");
+    $scope.run_json_input("data/test.json");
 
 
 
