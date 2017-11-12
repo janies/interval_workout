@@ -14,13 +14,21 @@ function WorkoutController($scope, $timeout, $http){
       $scope.name = "Rest";
     }
 
-    $scope.set_activity = function(status, index){
-      console.log("Activity status:", status, "\nindex:", index);
+    $scope.set_activity = function(val, index){
+      console.log("Activity status:", val[index], "\nindex:", index);
       $scope.rest = true;
-      $scope.counter = $scope.data[status][index].duration;
-      $scope.name = $scope.data[status][index].name;
-      $scope.image = $scope.data[status][index].image;
+      $scope.counter = val[index].duration;
+      $scope.name = val[index].name;
+      $scope.image = val[index].image;
+      if (index <= val.length - 2){
+        $scope.next_name = val[index + 1].name;
+      }
+      else{
+        $scope.next_name = "Nothing Left";
+      }
+
     }
+
     $scope.set_up_next_workout = function(){
       $scope.state = "workouts";
       $scope.display_countdown();
@@ -28,8 +36,10 @@ function WorkoutController($scope, $timeout, $http){
         $scope.set_rest($scope.data.workout_rest_duration);
       }
       else{
-        $scope.set_activity($scope.state, Math.floor(Math.random() * $scope.data["workouts"].length));
+        $scope.set_activity($scope.workouts, $scope.index);
+        $scope.index += 1;
       }
+
     }
 
     $scope.set_prep_for_workout = function(){
@@ -38,6 +48,8 @@ function WorkoutController($scope, $timeout, $http){
       $scope.counter = 10;
       $scope.name = "Prepare for Workout";
       $scope.state = "prep_for_workout";
+      $scope.index = 0;
+      $scope.next_name = $scope.workouts[0].name;
 
     }
     $scope.set_up_next_stretch = function(){
@@ -45,13 +57,14 @@ function WorkoutController($scope, $timeout, $http){
         $scope.set_rest($scope.data.stretch_rest_duration);
       }
       else{
-        $scope.index += 1;
-        if ($scope.index >= $scope.data["stretches"].length){
+        if ($scope.index >= $scope.stretches.length){
           $scope.set_prep_for_workout();
         }
         else{
-          $scope.set_activity($scope.state, $scope.index);
+          $scope.set_activity($scope.stretches, $scope.index);
+          $scope.index += 1;
         }
+
       }
     }
 
@@ -93,20 +106,38 @@ function WorkoutController($scope, $timeout, $http){
       $scope.button_state = "Pause";
       $scope.rest = false;
       $scope.state = "stretches";
-      $scope.index = -1;
+      $scope.index = 0;
       $scope.counter = 1;
-      $scope.count_down_timer = $scope.data["workout_duration"]
+      $scope.count_down_timer = $scope.data["workout_duration"];
       $scope.name = "Get Ready"
       $scope.minutes = "--";
       $scope.seconds = "--";
       var timeout = $timeout($scope.onTimeout, 1000);
     }
 
+    $scope.gen_stretches = function(){
+      $scope.stretches = $scope.data["stretches"];
+      console.log($scope.stretches);
+    }
+
+    $scope.gen_workouts = function(){
+      count = 0;
+      $scope.workouts = []
+      while ($scope.data["workout_duration"] > count){
+        workout = $scope.data["workouts"][Math.floor(Math.random() * $scope.data["workouts"].length)];
+        $scope.workouts.push(workout);
+        count += workout["duration"];
+        count += $scope.data["workout_rest_duration"];
+      }
+      console.log($scope.workouts);
+    }
     $scope.run_json_input = function(fname){
       $http.get(fname).success(
         function(data){
           //console.log("data -> ", data["workouts"][0].name)
           $scope.data = data;
+          $scope.gen_stretches();
+          $scope.gen_workouts();
           $scope.run_loop()
         });
     }
@@ -124,7 +155,7 @@ function WorkoutController($scope, $timeout, $http){
       }
     }
 
-    $scope.run_json_input("data/test.json");
+    $scope.run_json_input("data/config.json");
 
 
 
