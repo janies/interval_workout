@@ -1,198 +1,172 @@
 {
-  "workout_duration":900,
-  "stretch_rest_duration":5,
-  "workout_rest_duration":30,
-  "prep_time":60,
-  "workouts":[
+  "workout_duration":15,
+  "rest_duration":5,
+  "stretches":[
     {
       "name":"Pushups",
-      "image":"data/images/pushups.jpg",
+      "image":"",
       "duration":30
     },
     {
       "name":"Planks",
-      "image":"data/images/planks.jpg",
+      "image":"",
       "duration":60
-    },
-    { "name":"Hip Rises",
-      "images":"data/images/hip_raise.jpg",
-      "duration":30
-    },
-    {
-      "name":"leg lifts",
-      "images":"data/images/leg_lifts.jpg",
-      "duration":30
     },
     {
       "name":"Situps",
-      "image":"data/images/situps.jpg",
+      "image":"",
       "duration":30
     },
     {
       "name": "Cross Sittups",
-      "image":"data/images/cross-situp.jpg",
+      "image":"",
       "duration":30
     },
     {
       "name":"Squats",
-      "image":"data/images/squats.jpg",
+      "image":"",
       "duration":30
     },
     {
       "name":"Jabs",
-      "image":"data/images/jabs.jpg",
+      "image":"",
       "duration":30
     },
     {
       "name":"Front Kick",
-      "image":"data/images/front-kick.jpeg",
+      "image":"",
       "duration":60
     },
     {
       "name":"Side Kick",
-      "image":"data/images/side-kick.gif",
+      "image":"",
       "duration":60
     },
     {
       "name":"Round Kick",
-      "image":"data/images/round_kick.jpg",
+      "image":"",
       "duration":60
     },
     {
       "name":"High Knees",
-      "image":"data/images/high-knees.jpg",
+      "image":"",
       "duration":30
     },
     {
       "name":"Jumps",
-      "image":"data/images/jumps.jpg",
+      "image":"",
       "duration":30
     },
     {
       "name":"Jumping Jacks",
-      "image":"data/images/jumping-jacks.jpg",
+      "image":"",
       "duration":60
     },
     {
       "name":"Stalking",
-      "image":"data/images/shadow_box.jpg",
+      "image":"",
       "duration":60
     },
     {
       "name":"Upper Cuts",
-      "image":"data/images/uppercut.jpg",
+      "image":"",
       "duration":30
     },
     {
       "name":"Lunges",
-      "image":"data/images/lunges.jpg",
+      "image":"",
       "duration":60
     },
     {
       "name":"Squat Thrusts",
-      "image":"data/images/squat-thrusts.jpg",
+      "image":"",
       "duration":30
     },
     {
       "name":"Wall Sits",
-      "image":"data/images/wall_sit.jpg",
+      "image":"",
       "duration":30
     },
     {
       "name":"Ankle Rises",
-      "image":"data/images/ankle_lift.jpg",
-      "duration":30
-    },
-    {
-      "name":"Jab/Reverse combos",
-      "image":"data/images/jabs.jpg",
+      "image":"",
       "duration":30
     }
   ],
-  "stretches":[
+  "workouts":[
     {
       "name":"back stretch",
-      "image":"data/images/back.jpg",
+      "image":"",
       "duration":20
     },
     {
       "name":"splits",
-      "image":"data/images/splits.jpg",
+      "image":"",
       "duration":20
     },
     {
       "name":"American Splits (Left)",
-      "image":"data/images/american_splits.jpg",
+      "image":"",
       "duration":20
     },
     {
       "name":"American Splits (Right)",
-      "image":"data/images/american_splits.jpg",
+      "image":"",
       "duration":20
     },
     {
       "name":"Arm Stretch across body (Left)",
-      "image":"data/images/arm.jpeg",
+      "image":"",
       "duration":20
     },
     {
       "name":"Arm Stretch behind the back (Left)",
-      "image":"data/images/arm_back.jpg",
+      "image":"",
       "duration":20
     },
     {
       "name":"Arm Stretch across body (Right)",
-      "image":"data/images/arm.jpeg",
+      "image":"",
       "duration":20
     },
     {
       "name":"Arm Stretch behind the back (Right)",
-      "image":"data/images/arm_back.jpg",
+      "image":"",
       "duration":20
     },
     {
       "name":"Out Stretched Arms",
-      "image":"data/images/arm_out.jpg",
+      "image":"",
       "duration":20
     },
     {
-      "name":"Wall Stretch (Left)",
-      "image":"data/images/wall.jpg",
-      "duration":20
-    },
-    {
-      "name":"Wall Stretch (Right)",
-      "image":"data/images/wall.jpg",
+      "name":"Wall Stretch",
+      "image":"",
       "duration":20
     },
     {
       "name":"Snake",
-      "image":"data/images/snake.gif",
-      "duration":20
-    },
-    {
-      "name":"Cat Back",
-      "image":"data/images/cat_back.png",
+      "image":"",
       "duration":20
     },
     {
       "name":"Pull in left Knee",
-      "image":"data/images/pull_knee.jpg",
+      "image":"",
       "duration":20
     },
     {
       "name":"Pull foot back left leg",
-      "image":"data/images/foot_back.jpg",
+      "image":"",
       "duration":20
     },
     {
       "name":"Pull in Right Knee",
-      "image":"data/images/pull_knee.jpg",
+      "image":"",
       "duration":20
     },
     {
       "name":"Pull foot back Right leg",
-      "image":"data/images/foot_back.jpg",
+      "image":"",
       "duration":20
     }
   ]
