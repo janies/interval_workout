@@ -13,7 +13,18 @@
         <img src="{{image}}" alt="{{name}}" style="width:400px;height:500px;">
         <p><h1>{{counter}}</h1></p>
         <button ng-click="pause()"> {{button_state}}</button>
+
         <p><h3>Up Next: {{next_name}}</h3></p>
+        <p></p>
+        <p><h3>Workout Summary</h3></p>    
+        <table>
+          <tbody ng-repeat="row in workouts">
+            <tr>
+              <td>{{row.name}}</td>
+              <td>{{row.duration}}</td>
+            </tr>
+          </tbody>
+        </table>
       </center>
     </div>
   </body>
