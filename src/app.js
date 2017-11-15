@@ -6,20 +6,29 @@ WorkoutController.$inject = ['$scope', '$timeout', '$http'];
 
 function WorkoutController($scope, $timeout, $http){
 
+    $scope.playAudio = function(fn) {
+      var audio = new Audio(fn);
+      audio.play();
+    };
+
     $scope.set_rest = function(timeout){
       console.log("Rest:", timeout);
+      $scope.playAudio("data/audio/Rest.m4a")
       $scope.rest = false;
       $scope.counter = timeout;
       $scope.image = "data/images/rest.jpg";
       $scope.name = "Rest";
+      $scope.audio = "data/audio/Rest.m4a";
     }
 
     $scope.set_activity = function(val, index){
       console.log("Activity status:", val[index], "\nindex:", index);
+      $scope.playAudio("data/audio/Go.m4a");
       $scope.rest = true;
       $scope.counter = val[index].duration;
       $scope.name = val[index].name;
       $scope.image = val[index].image;
+      //$scope.audio = "data/audio/Pushups.m4a";
       if (index <= val.length - 2){
         $scope.next_name = val[index + 1].name;
       }
@@ -112,6 +121,7 @@ function WorkoutController($scope, $timeout, $http){
       $scope.name = "Get Ready"
       $scope.minutes = "--";
       $scope.seconds = "--";
+      $scope.need_to_play = true;
       var timeout = $timeout($scope.onTimeout, 1000);
     }
 
