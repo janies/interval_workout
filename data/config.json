@@ -19,7 +19,7 @@
       "duration":30
     },
     {
-      "name":"leg lifts",
+      "name":"Leg Lifts",
       "images":"data/images/leg_lifts.jpg",
       "duration":30
     },
@@ -104,19 +104,19 @@
       "duration":30
     },
     {
-      "name":"Jab/Reverse combos",
+      "name":"Jab/Reverse Combos",
       "image":"data/images/jabs.jpg",
       "duration":30
     }
   ],
   "stretches":[
     {
-      "name":"back stretch",
+      "name":"Back Stretch",
       "image":"data/images/back.jpg",
       "duration":20
     },
     {
-      "name":"splits",
+      "name":"Splits",
       "image":"data/images/splits.jpg",
       "duration":20
     },
@@ -131,22 +131,22 @@
       "duration":20
     },
     {
-      "name":"Arm Stretch across body (Left)",
+      "name":"Arm Stretch Across Body (Left)",
       "image":"data/images/arm.jpeg",
       "duration":20
     },
     {
-      "name":"Arm Stretch behind the back (Left)",
+      "name":"Arm Stretch Behind the Back (Left)",
       "image":"data/images/arm_back.jpg",
       "duration":20
     },
     {
-      "name":"Arm Stretch across body (Right)",
+      "name":"Arm Stretch Across Body (Right)",
       "image":"data/images/arm.jpeg",
       "duration":20
     },
     {
-      "name":"Arm Stretch behind the back (Right)",
+      "name":"Arm Stretch Behind the Back (Right)",
       "image":"data/images/arm_back.jpg",
       "duration":20
     },
@@ -176,12 +176,12 @@
       "duration":20
     },
     {
-      "name":"Pull in left Knee",
+      "name":"Pull in Left Knee",
       "image":"data/images/pull_knee.jpg",
       "duration":20
     },
     {
-      "name":"Pull foot back left leg",
+      "name":"Pull Foot Back Left Leg",
       "image":"data/images/foot_back.jpg",
       "duration":20
     },
@@ -191,7 +191,7 @@
       "duration":20
     },
     {
-      "name":"Pull foot back Right leg",
+      "name":"Pull Foot Back Right Leg",
       "image":"data/images/foot_back.jpg",
       "duration":20
     }
