@@ -116,7 +116,7 @@ function WorkoutController($scope, $timeout, $http){
       $scope.rest = false;
       $scope.state = "stretches";
       $scope.index = 0;
-      $scope.counter = 1;
+      $scope.counter = 5;
       $scope.count_down_timer = $scope.data["workout_duration"];
       $scope.name = "Get Ready"
       $scope.minutes = "--";
