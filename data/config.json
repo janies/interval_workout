@@ -199,6 +199,16 @@
       "name":"Pull Foot Back Right Leg",
       "image":"data/images/foot_back.jpg",
       "duration":20
+    },
+    {
+      "name": "knee across body (Left)", 
+      "image":"data/images/knee_across_body.jpg",
+      "duration":20
+    },
+    {
+      "name": "knee across body (Left)", 
+      "image":"data/images/knee_across_body.jpg",
+      "duration":20
     }
   ]
 }
