@@ -1,0 +1,79 @@
+{
+  "workout_duration":900,
+  "stretch_rest_duration":5,
+  "workout_rest_duration":30,
+  "prep_time":60,
+  "workouts":[
+    {
+      "name":"Pushups",
+      "image":"data/images/pushups.jpg",
+      "duration":30
+    },
+    {
+      "name":"Planks",
+      "image":"data/images/planks.jpg",
+      "duration":60
+    },
+    { "name":"Hip Rises",
+      "images":"data/images/hip_raise.jpg",
+      "duration":30
+    },
+    {
+      "name":"Leg Lifts",
+      "images":"data/images/leg_lifts.jpg",
+      "duration":30
+    },
+    {
+      "name":"Side Leg Lifts",
+      "images":"data/images/leg_lifts.jpg",
+      "duration":30
+    },
+    {
+      "name":"Situps",
+      "image":"data/images/situps.jpg",
+      "duration":30
+    },
+    {
+      "name": "Cross Situps",
+      "image":"data/images/cross-situp.jpg",
+      "duration":30
+    },
+    {
+      "name":"Squats",
+      "image":"data/images/squats.jpg",
+      "duration":30
+    },
+    {
+      "name":"High Knees",
+      "image":"data/images/high-knees.jpg",
+      "duration":30
+    },
+    {
+      "name":"Jumping Jacks",
+      "image":"data/images/jumping-jacks.jpg",
+      "duration":60
+    },
+    {
+      "name":"Lunges",
+      "image":"data/images/lunges.jpg",
+      "duration":60
+    },
+    {
+      "name":"Squat Thrusts",
+      "image":"data/images/squat-thrusts.jpg",
+      "duration":30
+    },
+    {
+      "name":"Wall Sits",
+      "image":"data/images/wall_sit.jpg",
+      "duration":30
+    },
+    {
+      "name":"Ankle Rises",
+      "image":"data/images/ankle_lift.jpg",
+      "duration":30
+    },
+  ],
+  "stretches":[
+  ]
+}

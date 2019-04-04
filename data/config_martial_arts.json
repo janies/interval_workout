@@ -1,0 +1,40 @@
+{
+  "workout_duration":900,
+  "stretch_rest_duration":5,
+  "workout_rest_duration":30,
+  "prep_time":60,
+  "workouts":[
+    {
+      "name":"Jabs",
+      "image":"data/images/jabs.jpg",
+      "duration":30
+    },
+    {
+      "name":"Front Kick",
+      "image":"data/images/front-kick.jpeg",
+      "duration":60
+    },
+    {
+      "name":"Side Kick",
+      "image":"data/images/side-kick.gif",
+      "duration":60
+    },
+    {
+      "name":"Round Kick",
+      "image":"data/images/round_kick.jpg",
+      "duration":60
+    },
+    {
+      "name":"Stalking",
+      "image":"data/images/shadow_box.jpg",
+      "duration":60
+    },
+    {
+      "name":"Jab/Reverse Combos",
+      "image":"data/images/jabs.jpg",
+      "duration":30
+    }
+  ],
+  "stretches":[
+  ]
+}

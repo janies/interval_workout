@@ -1,5 +1,5 @@
 {
-  "workout_duration":1200,
+  "workout_duration":900,
   "stretch_rest_duration":5,
   "workout_rest_duration":30,
   "prep_time":60,
@@ -82,11 +82,6 @@
       "name":"Stalking",
       "image":"data/images/shadow_box.jpg",
       "duration":60
-    },
-    {
-      "name":"Upper Cuts",
-      "image":"data/images/uppercut.jpg",
-      "duration":30
     },
     {
       "name":"Lunges",
