@@ -165,7 +165,7 @@ function WorkoutController($scope, $timeout, $http){
       }
     }
 
-    $scope.run_json_input("data/config_no_stretch.json");
+    $scope.run_json_input("data/config_stretching.json");
 
 
 
