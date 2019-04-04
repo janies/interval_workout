@@ -1,0 +1,136 @@
+{
+  "workout_duration":900,
+  "stretch_rest_duration":5,
+  "workout_rest_duration":30,
+  "prep_time":60,
+  "workouts":[
+  ],
+  "stretches":[
+    {
+      "name": "Roll Neck", 
+      "image":"",
+      "duration":20
+    },
+    {
+      "name": "Arms Across Body", 
+      "image":"",
+      "duration":20
+    },
+    {
+      "name": "Arms Reaching", 
+      "image":"",
+      "duration":20
+    },
+    {
+      "name":"Back Stretch",
+      "image":"data/images/back.jpg",
+      "duration":20
+    },
+    {
+      "name":"Splits",
+      "image":"data/images/splits.jpg",
+      "duration":20
+    },
+    {
+      "name":"American Splits (Left)",
+      "image":"data/images/american_splits.jpg",
+      "duration":20
+    },
+    {
+      "name":"American Splits (Right)",
+      "image":"data/images/american_splits.jpg",
+      "duration":20
+    },
+    {
+      "name":"Arm Stretch Across Body (Left)",
+      "image":"data/images/arm.jpeg",
+      "duration":20
+    },
+    {
+      "name":"Arm Stretch Behind the Back (Left)",
+      "image":"data/images/arm_back.jpg",
+      "duration":20
+    },
+    {
+      "name":"Arm Stretch Across Body (Right)",
+      "image":"data/images/arm.jpeg",
+      "duration":20
+    },
+    {
+      "name":"Arm Stretch Behind the Back (Right)",
+      "image":"data/images/arm_back.jpg",
+      "duration":20
+    },
+    {
+      "name":"Out Stretched Arms",
+      "image":"data/images/arm_out.jpg",
+      "duration":20
+    },
+    {
+      "name":"Wall Stretch (Left)",
+      "image":"data/images/wall.jpg",
+      "duration":20
+    },
+    {
+      "name":"Wall Stretch (Right)",
+      "image":"data/images/wall.jpg",
+      "duration":20
+    },
+    {
+      "name":"Snake",
+      "image":"data/images/snake.gif",
+      "duration":20
+    },
+    {
+      "name":"Cat Back",
+      "image":"data/images/cat_back.png",
+      "duration":20
+    },
+    {
+      "name":"Pull in Left Knee",
+      "image":"data/images/pull_knee.jpg",
+      "duration":20
+    },
+    {
+      "name":"Pull Foot Back Left Leg",
+      "image":"data/images/foot_back.jpg",
+      "duration":20
+    },
+    {
+      "name":"Pull in Right Knee",
+      "image":"data/images/pull_knee.jpg",
+      "duration":20
+    },
+    {
+      "name":"Pull Foot Back Right Leg",
+      "image":"data/images/foot_back.jpg",
+      "duration":20
+    },
+    {
+      "name": "Leg Lifts (Front)", 
+      "image":"",
+      "duration":30
+    },
+    {
+      "name": "Leg Lifts (side)", 
+      "image":"",
+      "duration":30
+    },
+    {
+      "name": "Cresent Kicks", 
+      "image":"",
+      "duration":30
+    },
+    {
+      "name": "knee across body (Left)", 
+      "image":"data/images/knee_across_body.jpg",
+      "duration":20
+    },
+
+    {
+      "name": "knee across body (Right)", 
+      "image":"data/images/knee_across_body.jpg",
+      "duration":20
+    }
+  ]
+}
